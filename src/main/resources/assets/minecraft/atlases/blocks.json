@@ -1,0 +1,220 @@
+{
+  "sources": [
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/warped_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/warped_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/birch_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/birch_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/cherry_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/cherry_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/bamboo_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/bamboo_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/mangrove_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/mangrove_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/acacia_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/acacia_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/crimson_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/crimson_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/dark_oak_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/dark_oak_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/jungle_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/jungle_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/oak_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/oak_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/larch_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/larch_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/redwood_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/redwood_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/olive_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/olive_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/mahogany_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/mahogany_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/cedar_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/cedar_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/coconut_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/coconut_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/ghaf_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/ghaf_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/willow_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/willow_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/palo_verde_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/palo_verde_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/cypress_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/cypress_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/joshua_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/joshua_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/maple_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/maple_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/aspen_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/aspen_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/sugi_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/sugi_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/fir_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/fir_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/saxaul_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/saxaul_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/wisteria_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/wisteria_banner_shield_base_nopattern"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "W": {
+      "item": "deeperdarker:echo_planks"
+    }
+  },
+  "pattern": [
+    "W#W",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "distinctshields:echo_shield"
+  },
+  "show_notification": true
+}

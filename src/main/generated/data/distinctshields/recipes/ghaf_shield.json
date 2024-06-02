@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "W": {
+      "item": "natures_spirit:ghaf_planks"
+    }
+  },
+  "pattern": [
+    "W#W",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "distinctshields:ghaf_shield"
+  },
+  "show_notification": true
+}

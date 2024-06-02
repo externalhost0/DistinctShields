@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "W": {
+      "item": "natures_spirit:olive_planks"
+    }
+  },
+  "pattern": [
+    "W#W",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "distinctshields:olive_shield"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    "distinctshields:warped_shield",
+    "distinctshields:birch_shield",
+    "distinctshields:cherry_shield",
+    "distinctshields:bamboo_shield",
+    "distinctshields:mangrove_shield",
+    "distinctshields:acacia_shield",
+    "distinctshields:crimson_shield",
+    "distinctshields:dark_oak_shield",
+    "distinctshields:jungle_shield",
+    "distinctshields:oak_shield",
+    "distinctshields:larch_shield",
+    "distinctshields:redwood_shield",
+    "distinctshields:olive_shield",
+    "distinctshields:mahogany_shield",
+    "distinctshields:cedar_shield",
+    "distinctshields:coconut_shield",
+    "distinctshields:ghaf_shield",
+    "distinctshields:willow_shield",
+    "distinctshields:palo_verde_shield",
+    "distinctshields:cypress_shield",
+    "distinctshields:joshua_shield",
+    "distinctshields:maple_shield",
+    "distinctshields:aspen_shield",
+    "distinctshields:sugi_shield",
+    "distinctshields:fir_shield",
+    "distinctshields:saxaul_shield",
+    "distinctshields:wisteria_shield",
+    "distinctshields:echo_shield"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "W": {
+      "item": "minecraft:warped_planks"
+    }
+  },
+  "pattern": [
+    "W#W",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "distinctshields:warped_shield"
+  },
+  "show_notification": true
+}

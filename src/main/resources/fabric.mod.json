@@ -10,7 +10,7 @@
 	"contact": {
 		"sources": "https://github.com/ExternalHost0/DistinctShields"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/distinctshields/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -32,7 +32,8 @@
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*",
-		"fabricshieldlib": "*"
+		"fabricshieldlib": ">=1.7.2-1.20.1",
+		"midnightlib": ">=1.4.1"
 	},
 	"suggests": {
 		"deeperdarker": "*",

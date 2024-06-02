@@ -51,7 +51,7 @@ dependencies {
 
 	// fabric shield lib and depends
 	modImplementation "com.github.CrimsonDawn45:Fabric-Shield-Lib:v${project.fabric_shield_lib_version}"
-	modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}"
+	modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}-fabric"
 	modImplementation "com.github.Chocohead:Fabric-ASM:v${project.fabricasm_version}"
 	// dev qol
 	modLocalRuntime("maven.modrinth:lazydfu:${lazydfu_version}")

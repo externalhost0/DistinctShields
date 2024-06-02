@@ -3,9 +3,9 @@ package net.hayden.distinctshields.util;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.loader.api.FabricLoader;
 import net.hayden.distinctshields.DistinctShields;
-import net.hayden.distinctshields.items.DeeperDarkerItems;
+import net.hayden.distinctshields.items.compats.DeeperDarkerItems;
 import net.hayden.distinctshields.items.VanillaItems;
-import net.hayden.distinctshields.items.NaturesSpiritItems;
+import net.hayden.distinctshields.items.compats.NaturesSpiritItems;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -30,7 +30,7 @@ public class ModCreativeTab {
                         entries.add(item);
                     }
                 }
-                if(FabricLoader.getInstance().isModLoaded("promenade")) {
+                if(FabricLoader.getInstance().isModLoaded("deeperdarker")) {
                     for (Item item : DeeperDarkerItems.DD_SHIELDS.values()) {
                         entries.add(item);
                     }

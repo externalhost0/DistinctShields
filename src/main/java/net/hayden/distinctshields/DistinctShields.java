@@ -2,10 +2,10 @@ package net.hayden.distinctshields;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
-import net.hayden.distinctshields.items.BetterEndItems;
-import net.hayden.distinctshields.items.DeeperDarkerItems;
+import net.hayden.distinctshields.items.compats.BetterEndItems;
+import net.hayden.distinctshields.items.compats.DeeperDarkerItems;
 import net.hayden.distinctshields.items.VanillaItems;
-import net.hayden.distinctshields.items.NaturesSpiritItems;
+import net.hayden.distinctshields.items.compats.NaturesSpiritItems;
 import net.hayden.distinctshields.util.ModCreativeTab;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -36,9 +36,10 @@ public class DistinctShields implements ModInitializer {
 		if (FabricLoader.getInstance().isModLoaded("natures_spirit")) {
 			NaturesSpiritItems.registerModItems();
 		}
-		if (FabricLoader.getInstance().isModLoaded("promenade")) {
+		if (FabricLoader.getInstance().isModLoaded("deeperdarker")) {
 			DeeperDarkerItems.registerModItems();
 		}
+
 		if (FabricLoader.getInstance().isModLoaded("betterend")) {
 			BetterEndItems.registerModItems();
 		}

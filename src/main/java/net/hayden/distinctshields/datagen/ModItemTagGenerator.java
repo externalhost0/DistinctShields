@@ -2,9 +2,9 @@ package net.hayden.distinctshields.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.hayden.distinctshields.items.DeeperDarkerItems;
+import net.hayden.distinctshields.items.compats.DeeperDarkerItems;
 import net.hayden.distinctshields.items.VanillaItems;
-import net.hayden.distinctshields.items.NaturesSpiritItems;
+import net.hayden.distinctshields.items.compats.NaturesSpiritItems;
 import net.hayden.distinctshields.util.ModItemTags;
 import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryWrapper;

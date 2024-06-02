@@ -1,9 +1,10 @@
-package net.hayden.distinctshields.items;
+package net.hayden.distinctshields.items.compats;
 
 import com.google.common.collect.Maps;
 import com.kyanite.deeperdarker.content.DDBlocks;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.hayden.distinctshields.DistinctShields;
+import net.hayden.distinctshields.items.DShieldItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;

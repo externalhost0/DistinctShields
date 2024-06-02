@@ -8,8 +8,7 @@
 		"External Host"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/ExternalHost0/DistinctShields"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/distinctshields/icon.png",
@@ -32,9 +31,11 @@
 		"fabricloader": ">=0.15.11",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"fabricshieldlib": "*"
 	},
 	"suggests": {
-		"another-mod": "*"
+		"deeperdarker": "*",
+		"natures_spirit": "*"
 	}
 }

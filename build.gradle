@@ -50,8 +50,8 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// fabric shield lib and depends
-	modImplementation "com.github.CrimsonDawn45:Fabric-Shield-Lib:v${project.fabric_shield_lib_version}"
-	modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}-fabric"
+	modImplementation include ("com.github.CrimsonDawn45:Fabric-Shield-Lib:v${project.fabric_shield_lib_version}")
+	modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}"
 	modImplementation "com.github.Chocohead:Fabric-ASM:v${project.fabricasm_version}"
 	// dev qol
 	modLocalRuntime("maven.modrinth:lazydfu:${lazydfu_version}")
@@ -61,12 +61,13 @@ dependencies {
 	// natures spirit
 	modCompileOnly "maven.modrinth:WBvnqHfV:${project.natures_spirit_version}"
 	modRuntimeOnly "maven.modrinth:WBvnqHfV:${project.natures_spirit_version}"
-	modImplementation "com.github.glitchfiend:TerraBlender-fabric:${project.terrablender_version}"
+	modLocalRuntime "com.github.glitchfiend:TerraBlender-fabric:${project.terrablender_version}"
+//	modImplementation "com.github.glitchfiend:TerraBlender-fabric:${project.terrablender_version}"
 	// deeper and darker
 	modCompileOnly "maven.modrinth:deeperdarker:${deeperanddarker_version}"
 	modRuntimeOnly "maven.modrinth:deeperdarker:${deeperanddarker_version}"
-	modImplementation "dev.isxander:yet-another-config-lib:${project.yacl_version}+${minecraft_version}-fabric"
-	modImplementation("net.kyrptonaught:customportalapi:${project.customportalapi_version}")
+	modLocalRuntime "dev.isxander:yet-another-config-lib:${project.yacl_version}+${minecraft_version}-fabric"
+	modLocalRuntime("net.kyrptonaught:customportalapi:${project.customportalapi_version}")
 	// better end
 //	modCompileOnly "maven.modrinth:betterend:${project.betterend_version}"
 //	modRuntimeOnly "maven.modrinth:betterend:${project.betterend_version}"

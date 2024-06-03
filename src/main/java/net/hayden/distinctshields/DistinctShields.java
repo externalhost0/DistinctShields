@@ -24,10 +24,6 @@ public class DistinctShields implements ModInitializer {
 		return new Identifier(MOD_ID, key);
 	}
 
-	public static String getWoodTypeName(Item shields) {
-		return shields.getTranslationKey().replace("item.distinctshields.", "").replace("_shield", "");
-	}
-
 	@Override
 	public void onInitialize() {
 

@@ -22,11 +22,11 @@ public class ModAtlasesGen {
         for (Item shields : Iterables.concat(VanillaItems.MOD_SHIELDS.values(), NaturesSpiritItems.NS_SHIELDS.values())) {
             JsonObject source = new JsonObject();
             source.addProperty("type", "single");
-            source.addProperty("resource", String.format("%s:entity/%s_banner_shield_base", DistinctShields.MOD_ID, DistinctShields.getWoodTypeName(shields)));
+            source.addProperty("resource", String.format("%s:entity/%s_banner_shield_base", DistinctShields.MOD_ID, getWoodTypeName(shields)));
             sources.add(source);
             JsonObject source2 = new JsonObject();
             source2.addProperty("type", "single");
-            source2.addProperty("resource", String.format("%s:entity/%s_banner_shield_base_nopattern", DistinctShields.MOD_ID, DistinctShields.getWoodTypeName(shields)));
+            source2.addProperty("resource", String.format("%s:entity/%s_banner_shield_base_nopattern", DistinctShields.MOD_ID, getWoodTypeName(shields)));
             sources.add(source2);
             json.add("sources", sources);
         }
@@ -38,5 +38,8 @@ public class ModAtlasesGen {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    private static String getWoodTypeName(Item shields) {
+        return shields.getTranslationKey().replace("item.distinctshields.", "").replace("_shield", "");
     }
 }

@@ -67,6 +67,7 @@ dependencies {
 	modRuntimeOnly "maven.modrinth:deeperdarker:${deeperanddarker_version}"
 	modLocalRuntime "dev.isxander:yet-another-config-lib:${project.yacl_version}+${minecraft_version}-fabric"
 	modLocalRuntime("net.kyrptonaught:customportalapi:${project.customportalapi_version}")
+
 	// better end
 //	modCompileOnly "maven.modrinth:betterend:${project.betterend_version}"
 //	modRuntimeOnly "maven.modrinth:betterend:${project.betterend_version}"

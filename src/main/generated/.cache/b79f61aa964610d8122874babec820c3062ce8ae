@@ -1,11 +1,11 @@
-// 1.20.1	2024-06-01T23:30:11.326316	Distinct Shields/Model Definitions
-0a74140b1e715857f1dc14389da2bb7f22a74c43 assets/distinctshields/models/item/echo_shield.json
+// 1.20.1	2024-06-02T19:58:38.842086	Distinct Shields/Model Definitions
 4cddd56dc08546ab6b3b9af5d9fa40259f641242 assets/distinctshields/models/item/cypress_shield.json
+0a74140b1e715857f1dc14389da2bb7f22a74c43 assets/distinctshields/models/item/echo_shield.json
 00778df4a71d24794101b53d0eda536efa394bb8 assets/distinctshields/models/item/wisteria_shield_blocking.json
 d9bca84feb7a57833523788c883335df9df6a98b assets/distinctshields/models/item/coconut_shield_blocking.json
 2e2ca1aea4f004c5264549299e3d0579f3d17e62 assets/distinctshields/models/item/jungle_shield_blocking.json
-cd1b630a793a01803cc434a53fd973f96a599aeb assets/distinctshields/models/item/mahogany_shield.json
 51750bd49a71d0e10cb58047f124e85321fb3222 assets/distinctshields/models/item/echo_shield_blocking.json
+cd1b630a793a01803cc434a53fd973f96a599aeb assets/distinctshields/models/item/mahogany_shield.json
 1072c29b5fdc7ab1071946a81f138efefa9ec20b assets/distinctshields/models/item/mahogany_shield_blocking.json
 a399cf0aa0581593f660c4330581ca39c00b54c9 assets/distinctshields/models/item/acacia_shield_blocking.json
 1a25fce5828b325d1a69d0325efc29dafa8868c8 assets/distinctshields/models/item/joshua_shield_blocking.json

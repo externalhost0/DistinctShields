@@ -40,6 +40,6 @@ public class NaturesSpiritItems {
     }
 
     public static void registerModItems() {
-        DistinctShields.LOGGER.info("Registering mod items for " + DistinctShields.MOD_ID);
+        DistinctShields.LOGGER.info("Registering natures spirit items for " + DistinctShields.MOD_ID);
     }
 }

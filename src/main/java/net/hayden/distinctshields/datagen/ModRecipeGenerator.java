@@ -3,6 +3,7 @@ package net.hayden.distinctshields.datagen;
 import com.kyanite.deeperdarker.content.DDBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.fabricmc.loader.api.FabricLoader;
 import net.hayden.distinctshields.items.compats.DeeperDarkerItems;
 import net.hayden.distinctshields.items.compats.NaturesSpiritItems;
 import net.hayden.distinctshields.items.VanillaItems;
@@ -47,27 +48,30 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerWoodenShieldRecipe(exporter, VanillaItems.WARPED_SHIELD, Items.WARPED_PLANKS);
 
         // natures spirit shields
-        offerWoodenShieldRecipe(exporter, NaturesSpiritItems.ASPEN_SHIELD, HibiscusWoods.ASPEN.getPlanks());
-        offerWoodenShieldRecipe(exporter, NaturesSpiritItems.CEDAR_SHIELD, HibiscusWoods.CEDAR.getPlanks());
-        offerWoodenShieldRecipe(exporter, NaturesSpiritItems.COCONUT_SHIELD, HibiscusWoods.COCONUT.getPlanks());
-        offerWoodenShieldRecipe(exporter, NaturesSpiritItems.CYPRESS_SHIELD, HibiscusWoods.CYPRESS.getPlanks());
-        offerWoodenShieldRecipe(exporter, NaturesSpiritItems.FIR_SHIELD, HibiscusWoods.FIR.getPlanks());
-        offerWoodenShieldRecipe(exporter, NaturesSpiritItems.GHAF_SHIELD, HibiscusWoods.GHAF.getPlanks());
-        offerWoodenShieldRecipe(exporter, NaturesSpiritItems.JOSHUA_SHIELD, HibiscusWoods.JOSHUA.getPlanks());
-        offerWoodenShieldRecipe(exporter, NaturesSpiritItems.LARCH_SHIELD, HibiscusWoods.LARCH.getPlanks());
-        offerWoodenShieldRecipe(exporter, NaturesSpiritItems.MAHOGANY_SHIELD, HibiscusWoods.MAHOGANY.getPlanks());
-        offerWoodenShieldRecipe(exporter, NaturesSpiritItems.MAPLE_SHIELD, HibiscusWoods.MAPLE.getPlanks());
-        offerWoodenShieldRecipe(exporter, NaturesSpiritItems.OLIVE_SHIELD, HibiscusWoods.OLIVE.getPlanks());
-        offerWoodenShieldRecipe(exporter, NaturesSpiritItems.PALO_VERDE_SHIELD, HibiscusWoods.PALO_VERDE.getPlanks());
-        offerWoodenShieldRecipe(exporter, NaturesSpiritItems.REDWOOD_SHIELD, HibiscusWoods.REDWOOD.getPlanks());
-        offerWoodenShieldRecipe(exporter, NaturesSpiritItems.SAXAUL_SHIELD, HibiscusWoods.SAXAUL.getPlanks());
-        offerWoodenShieldRecipe(exporter, NaturesSpiritItems.SUGI_SHIELD, HibiscusWoods.SUGI.getPlanks());
-        offerWoodenShieldRecipe(exporter, NaturesSpiritItems.WILLOW_SHIELD, HibiscusWoods.WILLOW.getPlanks());
-        offerWoodenShieldRecipe(exporter, NaturesSpiritItems.WISTERIA_SHIELD, HibiscusWoods.WISTERIA.getPlanks());
-
+        if (FabricLoader.getInstance().isModLoaded("natures_spirit")) {
+            offerWoodenShieldRecipe(exporter, NaturesSpiritItems.ASPEN_SHIELD, HibiscusWoods.ASPEN.getPlanks());
+            offerWoodenShieldRecipe(exporter, NaturesSpiritItems.CEDAR_SHIELD, HibiscusWoods.CEDAR.getPlanks());
+            offerWoodenShieldRecipe(exporter, NaturesSpiritItems.COCONUT_SHIELD, HibiscusWoods.COCONUT.getPlanks());
+            offerWoodenShieldRecipe(exporter, NaturesSpiritItems.CYPRESS_SHIELD, HibiscusWoods.CYPRESS.getPlanks());
+            offerWoodenShieldRecipe(exporter, NaturesSpiritItems.FIR_SHIELD, HibiscusWoods.FIR.getPlanks());
+            offerWoodenShieldRecipe(exporter, NaturesSpiritItems.GHAF_SHIELD, HibiscusWoods.GHAF.getPlanks());
+            offerWoodenShieldRecipe(exporter, NaturesSpiritItems.JOSHUA_SHIELD, HibiscusWoods.JOSHUA.getPlanks());
+            offerWoodenShieldRecipe(exporter, NaturesSpiritItems.LARCH_SHIELD, HibiscusWoods.LARCH.getPlanks());
+            offerWoodenShieldRecipe(exporter, NaturesSpiritItems.MAHOGANY_SHIELD, HibiscusWoods.MAHOGANY.getPlanks());
+            offerWoodenShieldRecipe(exporter, NaturesSpiritItems.MAPLE_SHIELD, HibiscusWoods.MAPLE.getPlanks());
+            offerWoodenShieldRecipe(exporter, NaturesSpiritItems.OLIVE_SHIELD, HibiscusWoods.OLIVE.getPlanks());
+            offerWoodenShieldRecipe(exporter, NaturesSpiritItems.PALO_VERDE_SHIELD, HibiscusWoods.PALO_VERDE.getPlanks());
+            offerWoodenShieldRecipe(exporter, NaturesSpiritItems.REDWOOD_SHIELD, HibiscusWoods.REDWOOD.getPlanks());
+            offerWoodenShieldRecipe(exporter, NaturesSpiritItems.SAXAUL_SHIELD, HibiscusWoods.SAXAUL.getPlanks());
+            offerWoodenShieldRecipe(exporter, NaturesSpiritItems.SUGI_SHIELD, HibiscusWoods.SUGI.getPlanks());
+            offerWoodenShieldRecipe(exporter, NaturesSpiritItems.WILLOW_SHIELD, HibiscusWoods.WILLOW.getPlanks());
+            offerWoodenShieldRecipe(exporter, NaturesSpiritItems.WISTERIA_SHIELD, HibiscusWoods.WISTERIA.getPlanks());
+        }
         // deeper and darker shield
-        offerWoodenShieldRecipe(exporter, DeeperDarkerItems.ECHO_SHIELD, DDBlocks.ECHO_PLANKS);
-        //
+        if (FabricLoader.getInstance().isModLoaded("deeperdarker")) {
+            offerWoodenShieldRecipe(exporter, DeeperDarkerItems.ECHO_SHIELD, DDBlocks.ECHO_PLANKS);
+        }
+
 
     }
 }

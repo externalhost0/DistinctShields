@@ -2,6 +2,7 @@ package net.hayden.distinctshields.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
+import net.fabricmc.loader.api.FabricLoader;
 import net.hayden.distinctshields.DistinctShields;
 import net.hayden.distinctshields.items.compats.DeeperDarkerItems;
 import net.hayden.distinctshields.items.VanillaItems;
@@ -44,16 +45,20 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
                 translationBuilder.add("item." + DistinctShields.MOD_ID + "." + item + "." + color.toLowerCase(), generateItemDisplayName(item, color));
             }
         }
-        for (Item item : NaturesSpiritItems.NS_SHIELDS.values()) {
-            translationBuilder.add(item, generateItemDisplayName(item));
-            for (String color : DYE_COLORS) {
-                translationBuilder.add("item." + DistinctShields.MOD_ID + "." + item + "." + color.toLowerCase(), generateItemDisplayName(item, color));
+        if (FabricLoader.getInstance().isModLoaded("natures_spirit")) {
+            for (Item item : NaturesSpiritItems.NS_SHIELDS.values()) {
+                translationBuilder.add(item, generateItemDisplayName(item));
+                for (String color : DYE_COLORS) {
+                    translationBuilder.add("item." + DistinctShields.MOD_ID + "." + item + "." + color.toLowerCase(), generateItemDisplayName(item, color));
+                }
             }
         }
-        for (Item item : DeeperDarkerItems.DD_SHIELDS.values()) {
-            translationBuilder.add(item, generateItemDisplayName(item));
-            for (String color : DYE_COLORS) {
-                translationBuilder.add("item." + DistinctShields.MOD_ID + "." + item + "." + color.toLowerCase(), generateItemDisplayName(item, color));
+        if (FabricLoader.getInstance().isModLoaded("deeperdarker")) {
+            for (Item item : DeeperDarkerItems.DD_SHIELDS.values()) {
+                translationBuilder.add(item, generateItemDisplayName(item));
+                for (String color : DYE_COLORS) {
+                    translationBuilder.add("item." + DistinctShields.MOD_ID + "." + item + "." + color.toLowerCase(), generateItemDisplayName(item, color));
+                }
             }
         }
 

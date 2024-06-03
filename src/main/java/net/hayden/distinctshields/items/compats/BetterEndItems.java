@@ -29,6 +29,6 @@ public class BetterEndItems {
     }
 
     public static void registerModItems() {
-        DistinctShields.LOGGER.info("Registering mod items for " + DistinctShields.MOD_ID);
+        DistinctShields.LOGGER.info("Registering better end items for " + DistinctShields.MOD_ID);
     }
 }

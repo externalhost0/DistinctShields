@@ -54,15 +54,14 @@ dependencies {
 	modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}"
 	modImplementation "com.github.Chocohead:Fabric-ASM:v${project.fabricasm_version}"
 	// dev qol
-	modLocalRuntime("maven.modrinth:lazydfu:${lazydfu_version}")
-	modLocalRuntime "com.terraformersmc:modmenu:${project.mod_menu_version}"
+	modRuntimeOnly "maven.modrinth:lazydfu:${lazydfu_version}"
+	modRuntimeOnly "com.terraformersmc:modmenu:${project.mod_menu_version}"
 
 	// ---- MOD COMPATS ---
 	// natures spirit
 	modCompileOnly "maven.modrinth:WBvnqHfV:${project.natures_spirit_version}"
 	modRuntimeOnly "maven.modrinth:WBvnqHfV:${project.natures_spirit_version}"
 	modLocalRuntime "com.github.glitchfiend:TerraBlender-fabric:${project.terrablender_version}"
-//	modImplementation "com.github.glitchfiend:TerraBlender-fabric:${project.terrablender_version}"
 	// deeper and darker
 	modCompileOnly "maven.modrinth:deeperdarker:${deeperanddarker_version}"
 	modRuntimeOnly "maven.modrinth:deeperdarker:${deeperanddarker_version}"

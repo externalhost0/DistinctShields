@@ -4,6 +4,7 @@ import com.github.crimsondawn45.fabricshieldlib.lib.event.ShieldSetModelCallback
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.BuiltinItemRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
+import net.fabricmc.loader.api.FabricLoader;
 import net.hayden.distinctshields.items.compats.DeeperDarkerItems;
 import net.hayden.distinctshields.items.VanillaItems;
 import net.hayden.distinctshields.items.compats.NaturesSpiritItems;
@@ -26,13 +27,17 @@ public class DistinctShieldsClient implements ClientModInitializer {
             registerShieldPredicates(shields);
             registerBanner(shields);
         }
-        for (Item shields : NaturesSpiritItems.NS_SHIELDS.values()) {
-            registerShieldPredicates(shields);
-            registerBanner(shields);
+        if (FabricLoader.getInstance().isModLoaded("natures_spirit")) {
+            for (Item shields : NaturesSpiritItems.NS_SHIELDS.values()) {
+                registerShieldPredicates(shields);
+                registerBanner(shields);
+            }
         }
-        for (Item shields : DeeperDarkerItems.DD_SHIELDS.values()) {
-            registerShieldPredicates(shields);
-            registerBanner(shields);
+        if (FabricLoader.getInstance().isModLoaded("deeperdarker")) {
+            for (Item shields : DeeperDarkerItems.DD_SHIELDS.values()) {
+                registerShieldPredicates(shields);
+                registerBanner(shields);
+            }
         }
     }
     public static ShieldEntityModel modelShield;

@@ -23,6 +23,6 @@ public class DeeperDarkerItems {
     }
 
     public static void registerModItems() {
-        DistinctShields.LOGGER.info("Registering mod items for " + DistinctShields.MOD_ID);
+        DistinctShields.LOGGER.info("Registering deeper darker items for " + DistinctShields.MOD_ID);
     }
 }

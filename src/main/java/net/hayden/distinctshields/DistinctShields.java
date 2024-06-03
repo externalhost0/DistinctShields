@@ -29,16 +29,11 @@ public class DistinctShields implements ModInitializer {
 
 		ModCreativeTab.registerItemGroup();
 		VanillaItems.registerModItems();
-		if (FabricLoader.getInstance().isModLoaded("natures_spirit")) {
-			NaturesSpiritItems.registerModItems();
-		}
-		if (FabricLoader.getInstance().isModLoaded("deeperdarker")) {
-			DeeperDarkerItems.registerModItems();
-		}
-
-		if (FabricLoader.getInstance().isModLoaded("betterend")) {
-			BetterEndItems.registerModItems();
-		}
+		if (FabricLoader.getInstance().isModLoaded("natures_spirit")) NaturesSpiritItems.registerModItems();
+		if (FabricLoader.getInstance().isModLoaded("deeperdarker")) DeeperDarkerItems.registerModItems();
+//		if (FabricLoader.getInstance().isModLoaded("betterend")) {
+//			BetterEndItems.registerModItems();
+//		}
 
 		LOGGER.info("Initialized Variant Shields!");
 	}

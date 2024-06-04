@@ -1,9 +1,10 @@
-package net.hayden.distinctshields.items;
+package net.hayden.distinctshields.items.compats;
 
 import com.google.common.collect.Maps;
 import com.kyanite.deeperdarker.content.DDBlocks;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.hayden.distinctshields.DistinctShields;
+import net.hayden.distinctshields.items.DShieldItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -22,6 +23,6 @@ public class DeeperDarkerItems {
     }
 
     public static void registerModItems() {
-        DistinctShields.LOGGER.info("Registering mod items for " + DistinctShields.MOD_ID);
+        DistinctShields.LOGGER.info("Registering deeper darker items for " + DistinctShields.MOD_ID);
     }
 }

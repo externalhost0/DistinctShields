@@ -54,19 +54,20 @@ dependencies {
 	modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}"
 	modImplementation "com.github.Chocohead:Fabric-ASM:v${project.fabricasm_version}"
 	// dev qol
-	modLocalRuntime("maven.modrinth:lazydfu:${lazydfu_version}")
-	modLocalRuntime "com.terraformersmc:modmenu:${project.mod_menu_version}"
+	modRuntimeOnly "maven.modrinth:lazydfu:${lazydfu_version}"
+	modRuntimeOnly "com.terraformersmc:modmenu:${project.mod_menu_version}"
 
 	// ---- MOD COMPATS ---
 	// natures spirit
 	modCompileOnly "maven.modrinth:WBvnqHfV:${project.natures_spirit_version}"
 	modRuntimeOnly "maven.modrinth:WBvnqHfV:${project.natures_spirit_version}"
-	modImplementation "com.github.glitchfiend:TerraBlender-fabric:${project.terrablender_version}"
+	modLocalRuntime "com.github.glitchfiend:TerraBlender-fabric:${project.terrablender_version}"
 	// deeper and darker
 	modCompileOnly "maven.modrinth:deeperdarker:${deeperanddarker_version}"
 	modRuntimeOnly "maven.modrinth:deeperdarker:${deeperanddarker_version}"
-	modImplementation "dev.isxander:yet-another-config-lib:${project.yacl_version}+${minecraft_version}-fabric"
-	include modImplementation("net.kyrptonaught:customportalapi:${project.customportalapi_version}")
+	modLocalRuntime "dev.isxander:yet-another-config-lib:${project.yacl_version}+${minecraft_version}-fabric"
+	modLocalRuntime("net.kyrptonaught:customportalapi:${project.customportalapi_version}")
+
 	// better end
 //	modCompileOnly "maven.modrinth:betterend:${project.betterend_version}"
 //	modRuntimeOnly "maven.modrinth:betterend:${project.betterend_version}"

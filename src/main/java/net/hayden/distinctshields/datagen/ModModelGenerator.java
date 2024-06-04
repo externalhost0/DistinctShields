@@ -4,9 +4,10 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.hayden.distinctshields.items.DeeperDarkerItems;
+import net.fabricmc.loader.api.FabricLoader;
+import net.hayden.distinctshields.items.compats.DeeperDarkerItems;
 import net.hayden.distinctshields.items.VanillaItems;
-import net.hayden.distinctshields.items.NaturesSpiritItems;
+import net.hayden.distinctshields.items.compats.NaturesSpiritItems;
 import net.hayden.distinctshields.util.ModModels;
 import net.hayden.distinctshields.util.ModTextureKey;
 import net.minecraft.data.client.BlockStateModelGenerator;
@@ -32,11 +33,15 @@ public class ModModelGenerator extends FabricModelProvider {
         for (Item shield : VanillaItems.MOD_SHIELDS.values()) {
             registerFabricShieldItem(itemModelGenerator, shield);
         }
-        for (Item shield : NaturesSpiritItems.NS_SHIELDS.values()) {
-            registerFabricShieldItem(itemModelGenerator, shield);
+        if (FabricLoader.getInstance().isModLoaded("natures_spirit")) {
+            for (Item shield : NaturesSpiritItems.NS_SHIELDS.values()) {
+                registerFabricShieldItem(itemModelGenerator, shield);
+            }
         }
-        for (Item shield : DeeperDarkerItems.DD_SHIELDS.values()) {
-            registerFabricShieldItem(itemModelGenerator, shield);
+        if (FabricLoader.getInstance().isModLoaded("deeperdarker")) {
+            for (Item shield : DeeperDarkerItems.DD_SHIELDS.values()) {
+                registerFabricShieldItem(itemModelGenerator, shield);
+            }
         }
     }
 

@@ -2,9 +2,10 @@ package net.hayden.distinctshields.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.hayden.distinctshields.items.DeeperDarkerItems;
+import net.fabricmc.loader.api.FabricLoader;
+import net.hayden.distinctshields.items.compats.DeeperDarkerItems;
 import net.hayden.distinctshields.items.VanillaItems;
-import net.hayden.distinctshields.items.NaturesSpiritItems;
+import net.hayden.distinctshields.items.compats.NaturesSpiritItems;
 import net.hayden.distinctshields.util.ModItemTags;
 import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryWrapper;
@@ -22,11 +23,15 @@ public class ModItemTagGenerator extends FabricTagProvider.ItemTagProvider {
         for (Item shields : VanillaItems.MOD_SHIELDS.values()) {
             getOrCreateTagBuilder(ModItemTags.SHIELDS).add(shields);
         }
-        for (Item shields : NaturesSpiritItems.NS_SHIELDS.values()) {
-            getOrCreateTagBuilder(ModItemTags.SHIELDS).add(shields);
+        if (FabricLoader.getInstance().isModLoaded("natures_spirit")) {
+            for (Item shields : NaturesSpiritItems.NS_SHIELDS.values()) {
+                getOrCreateTagBuilder(ModItemTags.SHIELDS).add(shields);
+            }
         }
-        for (Item shields : DeeperDarkerItems.DD_SHIELDS.values()) {
-            getOrCreateTagBuilder(ModItemTags.SHIELDS).add(shields);
+        if (FabricLoader.getInstance().isModLoaded("deeperdarker")) {
+            for (Item shields : DeeperDarkerItems.DD_SHIELDS.values()) {
+                getOrCreateTagBuilder(ModItemTags.SHIELDS).add(shields);
+            }
         }
     }
 }

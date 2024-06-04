@@ -2,10 +2,10 @@ package net.hayden.distinctshields;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
-import net.hayden.distinctshields.items.BetterEndItems;
-import net.hayden.distinctshields.items.DeeperDarkerItems;
+import net.hayden.distinctshields.items.compats.BetterEndItems;
+import net.hayden.distinctshields.items.compats.DeeperDarkerItems;
 import net.hayden.distinctshields.items.VanillaItems;
-import net.hayden.distinctshields.items.NaturesSpiritItems;
+import net.hayden.distinctshields.items.compats.NaturesSpiritItems;
 import net.hayden.distinctshields.util.ModCreativeTab;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -24,24 +24,16 @@ public class DistinctShields implements ModInitializer {
 		return new Identifier(MOD_ID, key);
 	}
 
-	public static String getWoodTypeName(Item shields) {
-		return shields.getTranslationKey().replace("item.distinctshields.", "").replace("_shield", "");
-	}
-
 	@Override
 	public void onInitialize() {
 
 		ModCreativeTab.registerItemGroup();
 		VanillaItems.registerModItems();
-		if (FabricLoader.getInstance().isModLoaded("natures_spirit")) {
-			NaturesSpiritItems.registerModItems();
-		}
-		if (FabricLoader.getInstance().isModLoaded("promenade")) {
-			DeeperDarkerItems.registerModItems();
-		}
-		if (FabricLoader.getInstance().isModLoaded("betterend")) {
-			BetterEndItems.registerModItems();
-		}
+		if (FabricLoader.getInstance().isModLoaded("natures_spirit")) NaturesSpiritItems.registerModItems();
+		if (FabricLoader.getInstance().isModLoaded("deeperdarker")) DeeperDarkerItems.registerModItems();
+//		if (FabricLoader.getInstance().isModLoaded("betterend")) {
+//			BetterEndItems.registerModItems();
+//		}
 
 		LOGGER.info("Initialized Variant Shields!");
 	}

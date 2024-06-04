@@ -1,4 +1,4 @@
-package net.hayden.distinctshields.items;
+package net.hayden.distinctshields.items.compats;
 
 import com.google.common.collect.Maps;
 import net.hayden.distinctshields.DistinctShields;
@@ -29,6 +29,6 @@ public class BetterEndItems {
     }
 
     public static void registerModItems() {
-        DistinctShields.LOGGER.info("Registering mod items for " + DistinctShields.MOD_ID);
+        DistinctShields.LOGGER.info("Registering better end items for " + DistinctShields.MOD_ID);
     }
 }

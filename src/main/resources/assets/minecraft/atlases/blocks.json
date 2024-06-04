@@ -215,6 +215,14 @@
     {
       "type": "single",
       "resource": "distinctshields:entity/wisteria_banner_shield_base_nopattern"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/echo_banner_shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "distinctshields:entity/echo_banner_shield_base_nopattern"
     }
   ]
 }

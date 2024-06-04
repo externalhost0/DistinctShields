@@ -1,8 +1,9 @@
-package net.hayden.distinctshields.items;
+package net.hayden.distinctshields.items.compats;
 
 import com.google.common.collect.Maps;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.hayden.distinctshields.DistinctShields;
+import net.hayden.distinctshields.items.DShieldItem;
 import net.hibiscus.naturespirit.registration.block_registration.HibiscusWoods;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -39,6 +40,6 @@ public class NaturesSpiritItems {
     }
 
     public static void registerModItems() {
-        DistinctShields.LOGGER.info("Registering mod items for " + DistinctShields.MOD_ID);
+        DistinctShields.LOGGER.info("Registering natures spirit items for " + DistinctShields.MOD_ID);
     }
 }

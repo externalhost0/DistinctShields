@@ -61,7 +61,7 @@ dependencies {
 	// natures spirit
 	modCompileOnly "maven.modrinth:WBvnqHfV:${project.natures_spirit_version}"
 	modRuntimeOnly "maven.modrinth:WBvnqHfV:${project.natures_spirit_version}"
-	modLocalRuntime "com.github.glitchfiend:TerraBlender-fabric:${project.terrablender_version}"
+	modLocalRuntime "com.github.glitchfiend:TerraBlender-fabric:${project.minecraft_version}-${project.terrablender_version}"
 	// deeper and darker
 	modCompileOnly "maven.modrinth:deeperdarker:${deeperanddarker_version}"
 	modRuntimeOnly "maven.modrinth:deeperdarker:${deeperanddarker_version}"

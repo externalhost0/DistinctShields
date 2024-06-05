@@ -4,25 +4,23 @@ import com.kyanite.deeperdarker.content.DDBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.fabricmc.loader.api.FabricLoader;
+import net.hayden.distinctshields.items.VanillaItems;
 import net.hayden.distinctshields.items.compats.DeeperDarkerItems;
 import net.hayden.distinctshields.items.compats.NaturesSpiritItems;
-import net.hayden.distinctshields.items.VanillaItems;
 import net.hibiscus.naturespirit.registration.block_registration.HibiscusWoods;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.VanillaRecipeProvider;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 
-import java.util.function.Consumer;
-
 public class ModRecipeGenerator extends FabricRecipeProvider {
     public ModRecipeGenerator(FabricDataOutput output) {
         super(output);
     }
 
-    public static void offerWoodenShieldRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible shield, ItemConvertible plank) {
+    public static void offerWoodenShieldRecipe(RecipeExporter exporter, ItemConvertible shield, ItemConvertible plank) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, shield)
                 .input('W', plank)
                 .input('#', Items.IRON_INGOT)
@@ -34,7 +32,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
     }
 
     @Override
-    public void generate(Consumer<RecipeJsonProvider> exporter) {
+    public void generate(RecipeExporter exporter) {
         offerWoodenShieldRecipe(exporter, VanillaItems.ACACIA_SHIELD, Items.ACACIA_PLANKS);
         offerWoodenShieldRecipe(exporter, VanillaItems.BAMBOO_SHIELD, Items.BAMBOO_PLANKS);
         offerWoodenShieldRecipe(exporter, VanillaItems.BIRCH_SHIELD, Items.BIRCH_PLANKS);
